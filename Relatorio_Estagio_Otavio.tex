@@ -1,0 +1,271 @@
+\input{template_nota}
+\usepackage{natbib}
+\usepackage{tikz}
+\graphicspath{ {./figs/} }
+\tcbuselibrary{listings,breakable}
+
+%Template da capa do documento
+
+\title		{   
+				\Huge
+				Instituto Mauá de Tecnologia \\
+				Escola de Engenharia Mauá \\
+				\vspace{12px}
+				\huge
+				\textbf{
+						Relatório de Estágio \\ 
+						\Large 
+						\vspace{12px}
+						ETGSUP - Estágio Supervisionado Obrigatório \\
+						}	
+			}
+
+\author		{
+				Otávio Moreira Petito 08.01453-0 \\
+			}
+			
+\titlepic	{\includegraphics[width=0.4\textwidth]{maua_logo}}
+
+%Início do documento
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Informações gerais}
+
+\section{Informações do aluno}
+
+	\begin{table} [hl]
+	\begin{tabular}{ll}
+		
+		Nome: & Otávio Moreira Petito\\
+		RA: & 08.01453-0\\
+		Curso: & Engenharia Eletrônica\\
+		Série: & 6ª\\
+		Período: & Noturno\\
+		Orientador: & Professor Dr. Wânderson de Oliveira Assis
+		
+	\end{tabular}
+	\end{table}
+	
+\section{Informações da empresa}
+
+	\includegraphics[width=0.2\textwidth]{siemens_logo}
+	
+	\begin{table} [hl]
+	\begin{tabular}{ll}
+
+		Empresa: & Siemens LTDA.\\
+		Endereço: & Av. Mutinga, 3800\\
+		Departamento: & RC-BR PD PA AE OEC ENG\\
+		Supervisor: & Edgar Higashi\\
+		
+	\end{tabular}
+	\end{table}
+	
+\chapter{Objetivo}
+
+	O objetivo desse relatório é de identificar e descrever algumas das atividades realizadas pelo aluno e estagiário de Engenharia Eletrônica, Otávio Moreira Petito, durante parte do período de estágio realizado na empresa Siemens LTDA, no período de Abril de 2014 até o presente momento.
+	
+\chapter{A empresa}
+
+\section{Apresentação da empresa}
+
+	A Siemens é atualmente o maior conglomerado de engenharia elétrica e eletrônica do país, com suas atividades agrupadas em quatro setores estratégicos – Industry, Energy, Healthcare e Infrastructure \& Cities – enquanto a Siemens IT Solutions and Services atua nos quatro campos.
+
+	Presente no Brasil há mais de cem anos, a Siemens tem sido uma empresa de tecnologia integrada que mantém posição de liderança em vários segmentos. A principal razão para esta permanência no topo está na enorme capacidade de adaptação às mudanças.
+
+	Trabalhando para antever os desafios de amanhã e ajudar a sociedade a se preparar melhor, contemplando a qualidade de vida da população, o respeito ao meio ambiente, com a responsabilidade em criar condições econômicas que se traduzam em crescimento sustentável.\textsuperscript{[1]}
+
+\section{Breve histórico}
+	
+		A Siemens iniciou suas atividades no Brasil ainda no século 19, e fundou a subsidiária brasileira em 1905. Em mais de um século, assumiu a condição de maior empresa de tecnologia integrada do país. 
+
+	O pioneirismo sempre esteve presente na da companhia. Sendo que a atuação mais antiga no Brasil aconteceu com a instalação da primeira linha telegráfica entre o Rio de Janeiro e o Rio Grande do Sul. Também sendo responsável por outros marcos de inovação, instalando a primeira central telefônica automática da América Latina, em 1922, e a primeira fábrica de transformadores do Brasil, em 1939.
+
+	Atualmente, os equipamentos e sistemas da empresa são responsáveis por 50\% da energia elétrica no país. No Brasil, o Grupo Siemens conta aproximadamente com dez mil colaboradores, seis centros de pesquisa, desenvolvimento e engenharia, treze unidades fabris e doze escritórios regionais de vendas e \textit{service}.\textsuperscript{[1]}
+	
+\section{Ramo de atividades}
+
+	Eletrificação, automação e digitalização são os campos de crescimento de longo prazo da Siemens. Para aproveitar totalmente o potencial de mercado nesses campos, os negócios são agrupados em nove divisões, além dos serviços de saúde, que constituem um negócio gerenciado separadamente.\textsuperscript{[2]} \pagebreak
+	{\it
+	\begin{itemize}
+		\item Power and Gas
+		\item Wind Power and Renewables
+		\item Power Generation Services
+		\item Energy Management
+		\item Building Technologies
+		\item Mobility
+		\item Digital Factory
+		\item Power Industries and Drives
+		\item Finantial Services
+		\item Healthcare
+	\end{itemize}}
+
+\section{Linha de produtos}
+
+	O setor de \textit{Power Industries and Drives} da Siemens oferece o que há de mais avançado em tecnologia de automação industrial, sistema de controle de processos, entre outros. Realizando todo o processo de desenvolvimento dos softwares destinados a essa finalidade.\textsuperscript{[3]}
+	
+\section{Organograma}
+
+	O organograma a seguir foi simplificada visando facilitar a localização do departamento de atuação.
+	
+		\includegraphics[width=0.5\textwidth]{Organograma}
+	
+\chapter{O estágio}	
+	
+\section{Descrição sucinta das atividades}
+
+	A seguir serão apresentadas, brevemente, algumas das atividades desenvolvidas durante o estágio.
+
+\subsection{Criação de EPH}
+
+	Os EPHs (\textit{Equipments Phases}) são sequências de passos e transições, criados por SFC (\textit{Sequential Flow Charts}), que tem por objetivo fazer o controle dos módulos de equipamento, que são conjuntos de válvulas, sensores, bombas e etc. De forma resumida, pode-se dizer que o EPH é a inteligencia de um módulo de equipamento, pois garante que um conjunto de instruções sejam executadas em cada uma das fases de operação de um processo de fabricação. 
+	
+	Os \textit{Equipments Phases} foram criados utilizando o software da Siemens, \textbf{SIMATIC Manager}, baseado em um conjunto de instruções previamente descritos em fluxogramas e representados em documentos tipo P\&ID.
+	
+\subsection{Route Control System}
+
+	Através de diagramas de tubulação e instrumentação, P\&IDs, de cada área de uma cervejaria, foram definidas as \textit{routes}, já contendo as \textit{partial routes} , \textit{locations} e os respectivos elementos (válvulas, bombas, entre outros) que seriam alocados. 
+	
+	Em uma macro em Excel foram criadas as \textit{locations} com as características indivíduais, que foram importadas no software \textbf{\textit{Route Control System}}, na sequência foram alocados os elementos, com as respectivas operações que poderiam ser assumidas. Com os elementos associados, foram realizadas as conexões das \textit{locations} gerando as \textit{partial routes}. E por fim, as conexões entre as \textit{partial routes} resultaram nas \textit{routes} para o processo de produção e CIP (\textit{clean-in-place}).
+
+\subsection{Desenvolvimento e atualização de ferramentas de trabalho}
+
+	Visando facilitar o andamento dos projetos e acompanhamento dos testes, foram desenvolvidas e/ou atualizadas macros em VBA para a realização de algumas tarefas, como a criação de planilhas de validação de testes, criação de banco de dados para desenvolvimento de software. Além da elaboração de protocolos de teste para os projetos.
+
+\subsection{Participação em TAF (Teste de Aceitação de Fábrica)}
+
+	Durante o TAF (teste de aceitação de fábrica) o projeto encontra-se em fase final de desenvolvimento, iniciando os testes com o cliente para validação do trabalho realizado, podendo ser realizado na própria Siemens ou no cliente.
+	
+	No TAF, de uma indústria química, foi realizado no suporte ao desenvolvimento do projeto, executando atividades na criação de SFCs.
+
+\subsection{Upgrade de sistema}
+
+	A participação no \textit{upgrade} do sistema, de uma indústria química, contou com tarefas como a configuração de estações de trabalho, atualização de software do PCS7 versão 8.1, instalação e configuração do \textit{Process Historian} e \textit{Information Server}, ajustes de compatibilidade de receitas no BATCH e ajustes de telas de processo.
+
+\chapter{Descrição detalhada de atividade}
+
+	A seguir será apresentada, uma das atividades desenvolvida durante o estágio de forma detalhada.
+	
+\section{Desenvolvimento de EOP com SFC}
+
+	Nos processos de automação industrial existem hierarquias de equipamentos que são responsáveis por determinadas etapas do processo. Na hierarquia mais baixa se encontram os módulos de equipamento, acima deles estão os EPH, ambos já explicados anteriormente. Os controles dos EPH são realizados pelas EOP (\textit{Equipment Operation}), que por sua vez são gerenciados pelas EUP (\textit{Equipment Unit Procedure}). 
+	
+	Os EOP, são conjuntos de instruções e transições realizados em SFC que fazem o controle dos EPH de um processo. A partir de um diagrama de blocos do processo de uma EUP, é possível saber quais os EOP estão envolvidos no processo e dessa forma.
+
+	\begin{figure}[th]
+		\centering
+		\includegraphics[width=1.0\linewidth]{./figs/Figure_00037}
+		\caption{Diagrama de blocos do processo (EUP)}
+	\end{figure}
+	
+	Cada bloco representado na Figura 4.1 é um EOP e cada cada EOP possui um fluxograma da operação utilizado como base para a construção do mesmo. 
+	
+	\pagebreak
+	\begin{figure}[th]
+		\centering
+		\includegraphics[width=1.15\textwidth]{./figs/Figure_00039}
+		\caption{Exemplo de um fluxograma simples de operação}
+	\end{figure}
+
+	A partir dos fluxogramas o desenvolvimento do SFC é iniciado no software \textbf{SIMATIC Manager}. Ao inserir um novo SFC é necessário fazer a inserção dos parâmetros que serão utilizados, como por exemplo os setpoints, os \textit{process values} e os \textit{control values}.
+	
+	\begin{figure}[th]
+		\centering
+		\includegraphics[width=1.0\textwidth]{./figs/Figure_00041}
+		\caption{Inserção dos Process Values}
+	\end{figure}
+
+	\begin{figure}[th]
+		\centering
+		\includegraphics[width=1.0\textwidth]{./figs/Figure_00042}
+		\caption{Inserção dos Control Values}
+	\end{figure}
+		\pagebreak
+	\begin{figure}[th]
+		\centering
+		\includegraphics[width=1.0\textwidth]{./figs/Figure_00043}
+		\caption{Inserção dos Setpoints}
+	\end{figure}	
+
+	
+	Para fazer a inserção desses parâmetros, basta selecionar o parâmetros e digitar as informações como o nome, tipo de dado, comentário, entre outros, como representado nas Figuras 5.3, 5.4 e 5.5.
+	
+	Após a parametrização realiazada, começa o processo de desenvolvimento adicionando os passos e transições necessárias de cada operação, sempre baseado no processo descrito no fluxograma.
+	
+	Conforme os passos e transições são inseridos no software, eles são nomeados de forma que tenha uma rápida identificação da etapa que está sendo realizado ao abrir o SFC, por exemplo, durante etapa de abastecimento do um reator o nome dado para a etapa foi "Abast\_E228" e no comentário é descrito de forma resumida o que se espera dessa etapa.
+	
+	\begin{figure}[th]
+		\centering
+		\includegraphics[width=1.1\textwidth]{./figs/ScreenShot045}
+		\caption{Sequência de etapas e transições}
+	\end{figure}
+
+	Quando os blocos de etapas e transições estão na cor cinza, significa que ele possui alguma instrução, blocos na cor branca não possuem instruções apenas comentários para identificar a etapa de transição, ou como no caso da Figura 5.6, para simplesmente terminar a sequência e forma lógica, uma vez que não podem existir etapas sem transições e vice-versa.
+	
+	Para incluir instruções dentro de cada etapa, é necessário um duplo clique no bloco desejado.
+	\pagebreak
+	\begin{figure}[th]
+		\centering
+		\includegraphics[width=0.6\textwidth]{./figs/ScreenShot037}
+		\caption{Aba Processing}
+	\end{figure}
+
+	Na aba \textit{General} são adicionadas as informações básicas como o nome e o comentário da etapa. Na aba \textit{Processing} são adicionadas as instruções que a etapa de executar, no caso da Figura 5.7, o \textit{Control Value} QV\_Abast\_Start iniciar a execução do EPH de abastecimento, o QV\_Abast\_CS irá realizar a estratégia 3 do EPH (cada EPH pode ter diversas estratégias de controle, como por exemplo, posição básica, abastecimento, \textit{completing}, \textit{resuming}, entre outras) e por fim o QV\_SP\_Pressao (setpoint de pressão) irá ser setado com um valor de 2 bar.
+	
+	Na aba \textit{Termination} são indicadas as instruções que a etapa deve realizar no final da mesma.
+	
+	\begin{figure}[th]
+		\centering
+		\includegraphics[width=0.6\textwidth]{./figs/ScreenShot038}
+		\caption{Aba Termination}
+	\end{figure}
+	
+	No caso da Figura 5.8, é indicado que o QV\_Abast\_Start encerará a execução do EPH de abastecimento, o QV\_Abast\_CS que a estratégia de controle será 'resetada'.
+	
+\chapter{Considerações finais}
+
+\section{Avaliação do estágio}
+
+	O estágio realizado foi muito importante para a minha formação, tanto pelo conhecimento técnico adquirido como pela experiência profissional. As atividades realizadas contribuíram para uma visão mais abrangente com relação a automação industrial, desde os equipamentos e softwares utilizados, até sua concepção e implementação.
+	
+	Foi possível aplicar no trabalho conceitos vistos no curso de Engenharia Eletrônica, principalmente relacionados às disciplinas de Engenharia de Controle, Projetos de Sistemas de Controle, Instrumentação e Automação e Laboratório de Controle e Automação. Esse conhecimento prévio foi muito importante para uma melhor execução do trabalho, além de facilitar no aprendizado de novos conhecimentos durante o estágio. 
+	
+	O trabalho em equipe para o desenvolvimento dos projetos foi um fator muito importante durante o estágio, auxiliando no crescimento profissional. O desenvolvimento de um projeto em equipe possibilita a aquisição de novos conhecimentos, tendo em vista as experiências particulares de cada um.
+	
+	Acredito, portanto, que o estágio realizado foi de extrema importância para a minha formação profissional, me mostrando de forma abrangente essa área de atuação da engenharia.
+
+\section{Assinaturas}
+
+\begin{minipage}[t]{.6\textwidth}
+
+	\rule{5cm}{0.1mm} \\
+	Otávio Moreira Petito\\
+	\tiny
+	Estagiário
+	
+\end{minipage}
+\begin{minipage}[t]{.6\textwidth}
+
+	\rule{5cm}{0.1mm} \\
+	Edgar Higashi\\
+	\tiny
+	Supervisor de estágio
+	
+\end{minipage}
+	
+\chapter{Referências}
+
+\begin{table} [hl]
+\begin{tabular}{ll}
+
+	1 & http://w3.siemens.com.br/home/br/pt/cc/sobre-a-siemens/Pages/home.aspx \\
+	2 & http://www.siemens.com/businesses/br/pt/ \\
+	3 & http://w3.siemens.com.br/automation/br/pt/Pages/automacao.aspx
+
+\end{tabular}
+\end{table}
+
+\end{document}

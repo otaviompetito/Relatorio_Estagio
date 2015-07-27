@@ -1,0 +1,8 @@
+EUP - equipment unit procedure
+EOP - equipment operation
+EPH - equipment phases
+
+EOP faz a coordenação dos EPH (equipment phases) 
+que controlam os módulos de equipamentos (conjunto de válvulas, motores, etc)
+
+EPH -> é a inteligencia dos módulos de controle.

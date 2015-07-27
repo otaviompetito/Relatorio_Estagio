@@ -1,0 +1,5 @@
+- plant view
+- Migr_lib - biblioteca dos típicos
+- AS04_Prj->Clariant->Aminas->Outros - hierarquia onde o chart será criado
+
+PCS7 versão 8

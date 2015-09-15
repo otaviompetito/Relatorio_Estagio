@@ -60,19 +60,20 @@
 		Endereço: & Av. Mutinga, 3800\\
 		Departamento: & RC-BR PD PA AE OEC ENG\\
 		Supervisor: & Edgar Higashi\\
+		CREA: & 5060544744\\
 		
 	\end{tabular}
 	\end{table}
 	
 \chapter{Objetivo}
 
-	O objetivo desse relatório é de identificar e descrever algumas das atividades realizadas pelo aluno e estagiário de Engenharia Eletrônica, Otávio Moreira Petito, durante parte do período de estágio realizado na empresa Siemens LTDA, no período de Abril de 2014 até o presente momento.
+	O objetivo desse relatório é de identificar e descrever algumas das atividades realizadas pelo aluno e estagiário de Engenharia Elétrica - Ênfase Eletrônica, Otávio Moreira Petito, durante parte do período de estágio realizado na empresa Siemens LTDA, no período de Abril de 2014 até o presente momento.
 	
 \chapter{A empresa}
 
 \section{Apresentação da empresa}
 
-	A Siemens é atualmente o maior conglomerado de engenharia elétrica e eletrônica do país, com suas atividades agrupadas em quatro setores estratégicos – Industry, Energy, Healthcare e Infrastructure \& Cities – enquanto a Siemens IT Solutions and Services atua nos quatro campos.
+	A Siemens é atualmente o maior conglomerado de engenharia elétrica e eletrônica do país, com suas atividades agrupadas em quatro setores estratégicos – \textit{Industry}, \textit{Energy}, \textit{Healthcare} e \textit{Infrastructure \& Cities} – enquanto a Siemens \textit{IT Solutions and Services} atua nos quatro campos.
 
 	Presente no Brasil há mais de cem anos, a Siemens tem sido uma empresa de tecnologia integrada que mantém posição de liderança em vários segmentos. A principal razão para esta permanência no topo está na enorme capacidade de adaptação às mudanças.
 
@@ -88,7 +89,8 @@
 	
 \section{Ramo de atividades}
 
-	Eletrificação, automação e digitalização são os campos de crescimento de longo prazo da Siemens. Para aproveitar totalmente o potencial de mercado nesses campos, os negócios são agrupados em nove divisões, além dos serviços de saúde, que constituem um negócio gerenciado separadamente.\textsuperscript{[2]} \pagebreak
+	Eletrificação, automação e digitalização são os campos de crescimento de longo prazo da Siemens. Para aproveitar totalmente o potencial de mercado nesses campos, os negócios são agrupados em nove divisões, além dos serviços de saúde, que constituem um negócio gerenciado separadamente.\textsuperscript{[2]}
+	
 	{\it
 	\begin{itemize}
 		\item Power and Gas
@@ -111,7 +113,7 @@
 
 	O organograma a seguir foi simplificada visando facilitar a localização do departamento de atuação.
 	
-		\includegraphics[width=0.5\textwidth]{Organograma}
+		\includegraphics[width=0.6\textwidth]{Organograma}
 	
 \chapter{O estágio}	
 	
@@ -139,7 +141,7 @@
 
 	Durante o TAF (teste de aceitação de fábrica) o projeto encontra-se em fase final de desenvolvimento, iniciando os testes com o cliente para validação do trabalho realizado, podendo ser realizado na própria Siemens ou no cliente.
 	
-	No TAF, de uma indústria química, foi realizado no suporte ao desenvolvimento do projeto, executando atividades na criação de SFCs.
+	No TAF, de uma indústria química, foi realizado no suporte ao desenvolvimento do projeto, executando atividades na criação e ajustes de SFCs.
 
 \subsection{Upgrade de sistema}
 
@@ -149,85 +151,67 @@
 
 	A seguir será apresentada, uma das atividades desenvolvida durante o estágio de forma detalhada.
 	
-\section{Desenvolvimento de EOP com SFC}
+\section{Desenvolvimento do software de simulação SIMIT com o simulador de campo SIMBA Profibus}
 
-	Nos processos de automação industrial existem hierarquias de equipamentos que são responsáveis por determinadas etapas do processo. Na hierarquia mais baixa se encontram os módulos de equipamento, acima deles estão os EPH, ambos já explicados anteriormente. Os controles dos EPH são realizados pelas EOP (\textit{Equipment Operation}), que por sua vez são gerenciados pelas EUP (\textit{Equipment Unit Procedure}). 
+	O SIMIT \textit{Simulation Framework} é um \textit{software} de simulação que fornece ao usuário diversas funções e ferramentas necessárias em uma interface amigável para implementação de simulações das plantas de automação. O SIMBA Profibus é um \textit{hardware} capaz de simular a planta, se comunicando via Profibus com o CLP.
 	
-	Os EOP, são conjuntos de instruções e transições realizados em SFC que fazem o controle dos EPH de um processo. A partir de um diagrama de blocos do processo de uma EUP, é possível saber quais os EOP estão envolvidos no processo e dessa forma.
-
+	Entre as vantagens da utilização do SIMIT, destacam-se a redução do tempo de comissionamento do projeto e a minimização de riscos durante fase de implementação e testes.
+	
+	\includegraphics[width=0.9\textwidth]{simit}
+	
+	O desenvolvimento do \textit{software} de simulação está diretamente ligado ao desenvolvimento do projeto no PCS7, pois é ele quem irá fornecer arquivos que facilitarão no andamento do projeto do SIMIT. 
+	
+	Ao iniciar o projeto no SIMIT, é necessário fazer a configuração do \textit{hardware} para depois fazer o \textit{download} dela no SIMBA Profibus. Para realizar tal tarefa, é necessário fazer no PCS7 a exportação dos arquivos do \textit{hardware config} e do \textit{symbol table} e importá-los no SIMIT.
+	
+	\includegraphics[width=1.0\textwidth]{hwconfig}
+	
+	Realizadas as importações, é necessário criar os 'típicos', que são os modelos que para os elementos de campo, ou seja, válvulas \textit{on/off}, válvulas proporcionais, motores, entre outros.
+	
+	Para a criação dos típicos é necessário criar um novo \textit{template}.
+	
 	\begin{figure}[th]
-		\centering
-		\includegraphics[width=1.0\linewidth]{./figs/Figure_00037}
-		\caption{Diagrama de blocos do processo (EUP)}
+	\centering
+	\includegraphics[width=0.23\textwidth]{template}
 	\end{figure}
 	
-	Cada bloco representado na Figura 4.1 é um EOP e cada cada EOP possui um fluxograma da operação utilizado como base para a construção do mesmo. 
-	
-	\pagebreak
-	\begin{figure}[th]
-		\centering
-		\includegraphics[width=1.15\textwidth]{./figs/Figure_00039}
-		\caption{Exemplo de um fluxograma simples de operação}
-	\end{figure}
-
-	A partir dos fluxogramas o desenvolvimento do SFC é iniciado no software \textbf{SIMATIC Manager}. Ao inserir um novo SFC é necessário fazer a inserção dos parâmetros que serão utilizados, como por exemplo os setpoints, os \textit{process values} e os \textit{control values}.
+	Após a criação do \textit{template} os elementos devem ser selecionados na biblioteca e arrastados para o \textit{chart}.
 	
 	\begin{figure}[th]
-		\centering
-		\includegraphics[width=1.0\textwidth]{./figs/Figure_00041}
-		\caption{Inserção dos Process Values}
-	\end{figure}
-
-	\begin{figure}[th]
-		\centering
-		\includegraphics[width=1.0\textwidth]{./figs/Figure_00042}
-		\caption{Inserção dos Control Values}
-	\end{figure}
-		\pagebreak
-	\begin{figure}[th]
-		\centering
-		\includegraphics[width=1.0\textwidth]{./figs/Figure_00043}
-		\caption{Inserção dos Setpoints}
-	\end{figure}	
-
-	
-	Para fazer a inserção desses parâmetros, basta selecionar o parâmetros e digitar as informações como o nome, tipo de dado, comentário, entre outros, como representado nas Figuras 5.3, 5.4 e 5.5.
-	
-	Após a parametrização realiazada, começa o processo de desenvolvimento adicionando os passos e transições necessárias de cada operação, sempre baseado no processo descrito no fluxograma.
-	
-	Conforme os passos e transições são inseridos no software, eles são nomeados de forma que tenha uma rápida identificação da etapa que está sendo realizado ao abrir o SFC, por exemplo, durante etapa de abastecimento do um reator o nome dado para a etapa foi "Abast\_E228" e no comentário é descrito de forma resumida o que se espera dessa etapa.
-	
-	\begin{figure}[th]
-		\centering
-		\includegraphics[width=1.1\textwidth]{./figs/ScreenShot045}
-		\caption{Sequência de etapas e transições}
-	\end{figure}
-
-	Quando os blocos de etapas e transições estão na cor cinza, significa que ele possui alguma instrução, blocos na cor branca não possuem instruções apenas comentários para identificar a etapa de transição, ou como no caso da Figura 5.6, para simplesmente terminar a sequência e forma lógica, uma vez que não podem existir etapas sem transições e vice-versa.
-	
-	Para incluir instruções dentro de cada etapa, é necessário um duplo clique no bloco desejado.
-	\pagebreak
-	\begin{figure}[th]
-		\centering
-		\includegraphics[width=0.6\textwidth]{./figs/ScreenShot037}
-		\caption{Aba Processing}
-	\end{figure}
-
-	Na aba \textit{General} são adicionadas as informações básicas como o nome e o comentário da etapa. Na aba \textit{Processing} são adicionadas as instruções que a etapa de executar, no caso da Figura 5.7, o \textit{Control Value} QV\_Abast\_Start iniciar a execução do EPH de abastecimento, o QV\_Abast\_CS irá realizar a estratégia 3 do EPH (cada EPH pode ter diversas estratégias de controle, como por exemplo, posição básica, abastecimento, \textit{completing}, \textit{resuming}, entre outras) e por fim o QV\_SP\_Pressao (setpoint de pressão) irá ser setado com um valor de 2 bar.
-	
-	Na aba \textit{Termination} são indicadas as instruções que a etapa deve realizar no final da mesma.
-	
-	\begin{figure}[th]
-		\centering
-		\includegraphics[width=0.6\textwidth]{./figs/ScreenShot038}
-		\caption{Aba Termination}
+	\centering
+	\includegraphics[width=0.95\textwidth]{tipico}
 	\end{figure}
 	
-	No caso da Figura 5.8, é indicado que o QV\_Abast\_Start encerará a execução do EPH de abastecimento, o QV\_Abast\_CS que a estratégia de controle será 'resetada'.
+	Criados os típicos, pode ser feito o importe da hierarquia e dos elementos de processo. No PCS7 é exportado um arquivo xml contendo essas informações.
 	
-\chapter{Considerações finais}
-
-\section{Avaliação do estágio}
+	\begin{figure}[th]
+	\centering
+	\includegraphics[width=0.95\textwidth]{xml}
+	\end{figure}
+	
+	Os típicos criados no SIMIT devem possuir os mesmos nomes usados no típicos criados no PCS7, dessa forma o \textit{software} irá procurar o nome do típico no xml e associá-lo ao típico do SIMIT.
+	
+	\begin{figure}[th]
+	\centering
+	\includegraphics[width=0.9\textwidth]{hier_tip}
+	\end{figure}\pagebreak
+	
+	Tendo a hierarquia criada e os elementos importados no SIMIT, parte-se para a criação dos \textit{flowcharts}. Nessa etapa são criadas os fluxos do processo baseados nos \textit{P\&ID} fornecidos pelo cliente.
+	
+	\begin{figure}[th]
+	\centering
+	\includegraphics[width=0.9\textwidth]{flowchart}
+	\end{figure}\pagebreak
+	
+	Criados todos os \textit{flowcharts} necessários o \textit{software} está pronto para realizar as simulações. Para iniciar a simulação, basta clicar no botão de \textit{play} no menu superior. Quando o SIMIT entrar em \textit{runtime}, a interface do mesmo ficará laranja. A partir desse ponto, todo o processo pode ser simulado no sistema SCADA da Siemens, o WinCC. Conforme as válvula e/ou motores são acionados os elementos no SIMIT ficam azuis, indicando que o elemento está aberto ou ligado. Nos reatores também é possível observar algumas informações, como por exemplo o nível e a quantidade de material.
+	
+	\begin{figure}[th]
+	\centering
+	\includegraphics[width=1.0\textwidth]{runtime}
+	\end{figure}
+	
+	O SIMIT é um \textit{software} extremamente útil para o desenvolvimento de projetos de automação industrial, a simulação é desenvolvida totalmente independente do \textit{software} de automação. Os testes que devem ser realizados para aceitação do \textit{software} são otimizados, reduzindo tempo de comissionamento e garantindo maior segurança durante a fase de testes.	
+	
+\chapter{Avaliação do estágio}
 
 	O estágio realizado foi muito importante para a minha formação, tanto pelo conhecimento técnico adquirido como pela experiência profissional. As atividades realizadas contribuíram para uma visão mais abrangente com relação a automação industrial, desde os equipamentos e softwares utilizados, até sua concepção e implementação.
 	
@@ -252,6 +236,7 @@
 	\rule{5cm}{0.1mm} \\
 	Edgar Higashi\\
 	\tiny
+	CREA: 5060544744\\
 	Supervisor de estágio
 	
 \end{minipage}

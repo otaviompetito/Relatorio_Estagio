@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.3)  12 MAY 2015 21:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.3)  15 SEP 2015 17:39
 entering extended mode
 **Relatorio_Estagio_Otavio.tex
-(F:\Relatorio_Otavio\Relatorio_Estagio_Otavio.tex
+(D:\GitHub\Relatorio_Estagio\Relatorio_Estagio_Otavio.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(F:\Relatorio_Otavio\template_nota.tex
+(D:\GitHub\Relatorio_Estagio\template_nota.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrreprt.cls"
 Document Class: scrreprt 2015/01/14 v3.15 KOMA-Script document class (report)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty"
@@ -1453,7 +1453,7 @@ Library (tcolorbox): 'tcbbreakable.code.tex' version '3.40'
 \tcb@testbox=\box105
 \tcb@totalupperbox=\box106
 \tcb@totallowerbox=\box107
-) (F:\Relatorio_Otavio\Relatorio_Estagio_Otavio.aux)
+) (D:\GitHub\Relatorio_Estagio\Relatorio_Estagio_Otavio.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
@@ -1483,8 +1483,8 @@ LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
 LaTeX Info: Redefining \nameref on input line 30.
 
-(F:\Relatorio_Otavio\Relatorio_Estagio_Otavio.out)
-(F:\Relatorio_Otavio\Relatorio_Estagio_Otavio.out)
+(D:\GitHub\Relatorio_Estagio\Relatorio_Estagio_Otavio.out)
+(D:\GitHub\Relatorio_Estagio\Relatorio_Estagio_Otavio.out)
 \@outlinefile=\write7
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -1565,7 +1565,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<./figs/maua_logo.png, id=98, 313.5093pt x 112.98549pt>
+<./figs/maua_logo.png, id=94, 313.5093pt x 112.98549pt>
 File: ./figs/maua_logo.png Graphic file (type png)
 
 <use ./figs/maua_logo.png>
@@ -1585,8 +1585,8 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <F:/Relatorio_Otavio/figs/
-maua_logo.png>]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <D:/GitHub/Relatorio_Estag
+io/figs/maua_logo.png>]
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 33.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
@@ -1599,7 +1599,7 @@ Package microtype Info: Loading generic settings for font family
 Package tocbasic Info: character protrusion at toc deactivated on input line 33
 .
 
-(F:\Relatorio_Otavio\Relatorio_Estagio_Otavio.toc
+(D:\GitHub\Relatorio_Estagio\Relatorio_Estagio_Otavio.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1627,7 +1627,7 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-<./figs/siemens_logo.png, id=139, 441.90094pt x 79.79813pt>
+<./figs/siemens_logo.png, id=135, 441.90094pt x 79.79813pt>
 File: ./figs/siemens_logo.png Graphic file (type png)
 
 <use ./figs/siemens_logo.png>
@@ -1635,12 +1635,18 @@ Package pdftex.def Info: ./figs/siemens_logo.png used on input line 54.
 (pdftex.def)             Requested size: 89.62482pt x 16.18338pt.
  [3
 
- <F:/Relatorio_Otavio/figs/siemens_logo.png>]
+ <D:/GitHub/Relatorio_Estagio/figs/siemens_logo.png>]
 Cap\'{\i }tulo 2.
 [4
 
 ]
 Cap\'{\i }tulo 3.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5
+
+]
 
 Class scrreprt Warning: Usage of deprecated font command `\it'!
 (scrreprt)              You should note, that in 1994 font command `\it' has
@@ -1653,32 +1659,26 @@ Class scrreprt Warning: Usage of deprecated font command `\it'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\it' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\it'
-(scrreprt)              by `\normalfont \itshape ' on input line 92.
+(scrreprt)              by `\normalfont \itshape ' on input line 94.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 94.
-
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 96.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 94.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 96.
 
-<./figs/Organograma.png, id=158, 612.03656pt x 262.73157pt>
+<./figs/Organograma.png, id=150, 264.23718pt x 609.77812pt>
 File: ./figs/Organograma.png Graphic file (type png)
 
 <use ./figs/Organograma.png>
-Package pdftex.def Info: ./figs/Organograma.png used on input line 114.
-(pdftex.def)             Requested size: 224.06548pt x 96.18286pt.
- [7 <F:/Relatorio_Otavio/figs/Organograma.png>]
+Package pdftex.def Info: ./figs/Organograma.png used on input line 116.
+(pdftex.def)             Requested size: 268.8813pt x 620.53256pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+[7 <D:/GitHub/Relatorio_Estagio/figs/Organograma.png>]
 Cap\'{\i }tulo 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1688,86 +1688,85 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 [9]
 Cap\'{\i }tulo 5.
-<./figs/Figure_00037.png, id=174, 696.35156pt x 286.82156pt>
-File: ./figs/Figure_00037.png Graphic file (type png)
+<./figs/simit.jpg, id=171, 481.8pt x 298.11375pt>
+File: ./figs/simit.jpg Graphic file (type jpg)
+ <use ./figs/simit.jpg>
+Package pdftex.def Info: ./figs/simit.jpg used on input line 160.
+(pdftex.def)             Requested size: 403.31511pt x 249.55865pt.
 
-<use ./figs/Figure_00037.png>
-Package pdftex.def Info: ./figs/Figure_00037.png used on input line 160.
-(pdftex.def)             Requested size: 448.13095pt x 184.58052pt.
+[10
 
-Underfull \vbox (badness 1521) has occurred while \output is active []
+ <D:/GitHub/Relatorio_Estagio/figs/simit.jpg>]
+<./figs/hwconfig.jpg, id=176, 1028.34187pt x 548.0475pt>
+File: ./figs/hwconfig.jpg Graphic file (type jpg)
 
- [10
+<use ./figs/hwconfig.jpg>
+Package pdftex.def Info: ./figs/hwconfig.jpg used on input line 166.
+(pdftex.def)             Requested size: 448.13095pt x 238.83359pt.
 
- <F:/Relatorio_Otavio/figs/Figure_00037.png>]
-<./figs/Figure_00039.png, id=181, 511.15968pt x 420.82219pt>
-File: ./figs/Figure_00039.png Graphic file (type png)
-
-<use ./figs/Figure_00039.png>
-Package pdftex.def Info: ./figs/Figure_00039.png used on input line 169.
-(pdftex.def)             Requested size: 515.34785pt x 424.29503pt.
-
-Overfull \hbox (67.2169pt too wide) in paragraph at lines 169--170
- [][] 
+Overfull \hbox (30.0pt too wide) in paragraph at lines 166--167
+[][] 
  []
 
-<./figs/Figure_00041.png, id=182, 944.02687pt x 289.08pt>
-File: ./figs/Figure_00041.png Graphic file (type png)
+<./figs/template.jpg, id=177, 256.70906pt x 545.78906pt>
+File: ./figs/template.jpg Graphic file (type jpg)
 
-<use ./figs/Figure_00041.png>
-Package pdftex.def Info: ./figs/Figure_00041.png used on input line 177.
-(pdftex.def)             Requested size: 448.13095pt x 137.2262pt.
+<use ./figs/template.jpg>
+Package pdftex.def Info: ./figs/template.jpg used on input line 174.
+(pdftex.def)             Requested size: 103.06819pt x 219.13623pt.
 
-<./figs/Figure_00042.png, id=183, 1004.25188pt x 265.74281pt>
-File: ./figs/Figure_00042.png Graphic file (type png)
 
-<use ./figs/Figure_00042.png>
-Package pdftex.def Info: ./figs/Figure_00042.png used on input line 183.
-(pdftex.def)             Requested size: 448.13095pt x 118.58565pt.
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 28.99998pt needed,
+(scrlayer-scrpage)                but only 18.125pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., setting typearea's option
+(scrlayer-scrpage)                `headheight=28.99998pt'.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
+78.
+
+[11 <D:/GitHub/Relatorio_Estagio/figs/hwconfig.jpg> <D:/GitHub/Relatorio_Estagi
+o/figs/template.jpg>] <./figs/tipico.jpg, id=182, 1028.34187pt x 548.0475pt>
+File: ./figs/tipico.jpg Graphic file (type jpg)
+
+<use ./figs/tipico.jpg>
+Package pdftex.def Info: ./figs/tipico.jpg used on input line 181.
+(pdftex.def)             Requested size: 425.72302pt x 226.8919pt.
+ <./figs/xml.jpg, id=183, 1028.34187pt x 548.0475pt>
+File: ./figs/xml.jpg Graphic file (type jpg)
+
+<use ./figs/xml.jpg>
+Package pdftex.def Info: ./figs/xml.jpg used on input line 188.
+(pdftex.def)             Requested size: 425.72302pt x 226.8919pt.
+ <./figs/hier_tip.jpg, id=184, 1028.34187pt x 548.0475pt>
+File: ./figs/hier_tip.jpg Graphic file (type jpg)
+
+<use ./figs/hier_tip.jpg>
+Package pdftex.def Info: ./figs/hier_tip.jpg used on input line 195.
+(pdftex.def)             Requested size: 403.31511pt x 214.94186pt.
+ [12 <D:/GitHub/Relatorio_Estagio/figs/tipico.jpg> <D:/GitHub/Relatorio_Estagio
+/figs/xml.jpg>]
+<./figs/flowchart.jpg, id=189, 1028.34187pt x 578.16pt>
+File: ./figs/flowchart.jpg Graphic file (type jpg)
+
+<use ./figs/flowchart.jpg>
+Package pdftex.def Info: ./figs/flowchart.jpg used on input line 202.
+(pdftex.def)             Requested size: 403.31511pt x 226.75186pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <F:/Relatorio_Otavio/figs/Figure_00039.png>]
-<./figs/Figure_00043.png, id=189, 1013.28563pt x 263.48438pt>
-File: ./figs/Figure_00043.png Graphic file (type png)
+ [13 <D:/GitHub/Relatorio_Estagio/figs/hier_tip.jpg> <D:/GitHub/Relatorio_Estag
+io/figs/flowchart.jpg>] <./figs/runtime.jpg, id=195, 1028.34187pt x 548.0475pt>
+File: ./figs/runtime.jpg Graphic file (type jpg)
 
-<use ./figs/Figure_00043.png>
-Package pdftex.def Info: ./figs/Figure_00043.png used on input line 189.
-(pdftex.def)             Requested size: 448.13095pt x 116.52448pt.
- [12 <F:/Relatorio_Otavio/figs/Figure_00041.png> <F:/Relatorio_Otavio/figs/Figu
-re_00042.png> <F:/Relatorio_Otavio/figs/Figure_00043.png>] <./figs/ScreenShot04
-5.jpg, id=197, 1445.4pt x 794.97pt>
-File: ./figs/ScreenShot045.jpg Graphic file (type jpg)
-
-<use ./figs/ScreenShot045.jpg>
-Package pdftex.def Info: ./figs/ScreenShot045.jpg used on input line 202.
-(pdftex.def)             Requested size: 492.94678pt x 271.12321pt.
-
-Overfull \hbox (44.81583pt too wide) in paragraph at lines 202--203
- [][] 
- []
-
-<./figs/ScreenShot037.jpg, id=198, 409.53pt x 256.70906pt>
-File: ./figs/ScreenShot037.jpg Graphic file (type jpg)
-
-<use ./figs/ScreenShot037.jpg>
-Package pdftex.def Info: ./figs/ScreenShot037.jpg used on input line 212.
-(pdftex.def)             Requested size: 268.8813pt x 168.555pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13 <F:/Relatorio_Otavio/figs/ScreenShot045.jpg>]
-<./figs/ScreenShot038.jpg, id=205, 409.53pt x 256.70906pt>
-File: ./figs/ScreenShot038.jpg Graphic file (type jpg)
-
-<use ./figs/ScreenShot038.jpg>
-Package pdftex.def Info: ./figs/ScreenShot038.jpg used on input line 222.
-(pdftex.def)             Requested size: 268.8813pt x 168.555pt.
- [14 <F:/Relatorio_Otavio/figs/ScreenShot037.jpg> <F:/Relatorio_Otavio/figs/Scr
-eenShot038.jpg>]
+<use ./figs/runtime.jpg>
+Package pdftex.def Info: ./figs/runtime.jpg used on input line 209.
+(pdftex.def)             Requested size: 448.13095pt x 238.83359pt.
+ [14 <D:/GitHub/Relatorio_Estagio/figs/runtime.jpg>]
 Cap\'{\i }tulo 6.
 
-Overfull \hbox (122.24272pt too wide) in paragraph at lines 242--258
+Overfull \hbox (122.24272pt too wide) in paragraph at lines 226--243
 [][] [] 
  []
 
@@ -1778,39 +1777,38 @@ Cap\'{\i }tulo 7.
 [16
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
- (F:\Relatorio_Otavio\Relatorio_Estagio_Otavio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+ (D:\GitHub\Relatorio_Estagio\Relatorio_Estagio_Otavio.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
 Package rerunfilecheck Info: File `Relatorio_Estagio_Otavio.out' has not change
 d.
-(rerunfilecheck)             Checksum: 07A641F13BB5676F7A866D5CEAF62937;1627.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
+(rerunfilecheck)             Checksum: A01591893298D619AB030BBBCB72EE68;1615.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
  ) 
 Here is how much of TeX's memory you used:
- 31865 strings out of 493921
- 627992 string characters out of 3144874
+ 31832 strings out of 493921
+ 627493 string characters out of 3144874
  834670 words of memory out of 3000000
- 34420 multiletter control sequences out of 15000+200000
- 88119 words of font info for 102 fonts, out of 3000000 for 9000
+ 34406 multiletter control sequences out of 15000+200000
+ 84781 words of font info for 97 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 72i,19n,77p,927b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,20n,77p,927b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/
-lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/lm/lmro12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lm
-sy10.pfb>
-Output written on Relatorio_Estagio_Otavio.pdf (16 pages, 1573418 bytes).
+1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/
+lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/lm/lmsy10.pfb>
+Output written on Relatorio_Estagio_Otavio.pdf (16 pages, 1759303 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 26364 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 24308 words of extra memory for PDF output out of 24883 (max. 10000000)
 

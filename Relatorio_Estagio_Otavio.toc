@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {4.1.2}Route Control System}{8}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Desenvolvimento e atualiza\IeC {\c c}\IeC {\~a}o de ferramentas de trabalho}{9}{subsection.4.1.3}
 \contentsline {subsection}{\numberline {4.1.4}Participa\IeC {\c c}\IeC {\~a}o em TAF (Teste de Aceita\IeC {\c c}\IeC {\~a}o de F\IeC {\'a}brica)}{9}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Upgrade de sistema}{9}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.5}\textit {Upgrade} de sistema}{9}{subsection.4.1.5}
 \contentsline {chapter}{\numberline {5}Descri\IeC {\c c}\IeC {\~a}o detalhada de atividade}{10}{chapter.5}
 \contentsline {section}{\numberline {5.1}Desenvolvimento do software de simula\IeC {\c c}\IeC {\~a}o SIMIT com o simulador de campo SIMBA Profibus}{10}{section.5.1}
 \contentsline {chapter}{\numberline {6}Avalia\IeC {\c c}\IeC {\~a}o do est\IeC {\'a}gio}{15}{chapter.6}
